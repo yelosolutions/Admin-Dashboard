@@ -519,3 +519,43 @@ margin-top: 1.4rem;
 .right .sales-analytics >div:hover{
     margin-left: 1rem;
 }
+
+
+.login-container {
+    position: relative;
+    display: block;
+    padding: var(--card-padding);
+    margin-top: 4rem;
+    border-radius: var(--card-border-radius);
+    width: 30rem;
+    align-items: center;
+    text-align: center;
+}
+
+form label {
+    display: block;
+    border-bottom: 2px solid var(--color-primary-variant);
+    margin-bottom: 0.5rem;
+}
+    
+form input[type="text"],
+form input[type="password"] {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin-bottom: 1rem;
+}
+    
+form button[type="submit"] {
+    background-color: var(--color-light);
+    color: var(--color-white);
+    border: none;
+    padding: 0.5em;
+    border-radius: var(--border-radius-1);
+    cursor: pointer;
+}
+    
+form button[type="submit"]:hover {
+    background-color: #2980b9;
+}

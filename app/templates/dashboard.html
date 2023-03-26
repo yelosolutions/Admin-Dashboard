@@ -1,15 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="icon" href=".static/images/y_combinator_logo_icon_245704.ico">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yelo | The future is here</title>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp"rel="stylesheet">
-    <link rel="stylesheet" href="./static/css/style.css" >
-</head>
-<body>
+{% extends 'base.html'%}
+
+{% block content %}
     <div class="container">
         <aside>
             <div class="top">
@@ -59,7 +50,7 @@
                     <span class="material-icons-sharp">add</span>
                     <h3>Add Products</h3>
                 </a>
-                <a>
+                <a href= "\login">
                     <span class="material-icons-sharp">logout</span>
                     <h3>Log out</h3>
                 </a>
@@ -223,6 +214,4 @@
             </div>
         </div>
     </div>
-    <script src=".scripts/js/app.js"></script>
-</body>
-</html>
+{% endblock %}
