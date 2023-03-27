@@ -1,13 +1,16 @@
 {% extends 'base.html' %}
 {%block content %}
 <div class="login-container">
-    <h1>Login</h1>
-    <form id="login-form">
-        <label for="username"> <h3>Username:</h3> </label>
-        <input type="text" id="username" name="username" required>
-        <label for="password"><h3>Password:</h3></label>
-        <input type="password" id="password" name="password" required>
-        <button type="submit"><h3>Login</h3></button>
-    </form>
+        <img src="./static/images/wall2.jpg" alt="a young man">
+    <div class="login-form">
+        <h1>Dashboard Login</h1>
+        <form id="login-form">
+            <label for="username"> <h3>Username</h3> </label>
+            <input type="text" id="username" name="username" required>
+            <label for="password"><h3>Password</h3></label>
+            <input type="password" id="password" name="password" required>
+            <button type="submit"><h3>Login</h3></button>
+        </form>
+    </div>
 </div>
 {% endblock %}

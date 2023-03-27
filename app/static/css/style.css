@@ -23,6 +23,7 @@
     --padding: 1.2rem;
 
     --box-shadow: 0 2rem 3rem var(--color-light);
+    --box-shadow1: 0 1.2rem 1.2rem var(--color-light);
 }
 
 *{
@@ -522,40 +523,72 @@ margin-top: 1.4rem;
 
 
 .login-container {
-    position: relative;
-    display: block;
-    padding: var(--card-padding);
-    margin-top: 4rem;
-    border-radius: var(--card-border-radius);
-    width: 30rem;
+    display: flex;
     align-items: center;
-    text-align: center;
+    justify-content: center;
+    width: 100vw;
+    height: 98vh;
+
+
 }
 
-form label {
+.login-container img{
+    position: absolute;
+    height: 1000px;
+    width: 100vw;
+}
+
+.login-container .login-form{
+    display: grid;
+    color: var(--color-primary);
+    position: absolute;
+    height: 25rem;
+    width: 30rem;
+    align-items: center;
+    justify-content: center;
+    border-radius: var(--card-border-radius);
+    padding: var(--card-padding);
+    background: transparent;
+    border: 1px solid var(--color-dark);
+    box-shadow: var(--box-shadow1);
+    text-align: center;
+    transition: all 250ms ease;
+}
+
+.login-container .login-form:hover{
+    box-shadow: none;
+}
+
+.login-form form label {
     display: block;
-    border-bottom: 2px solid var(--color-primary-variant);
+    border-bottom: none;
     margin-bottom: 0.5rem;
+    color: var(--color-primary);
 }
     
-form input[type="text"],
-form input[type="password"] {
+.login-form form >input{
     width: 100%;
     padding: 0.5rem;
-    border: 1px solid #ccc;
-    border-radius: 3px;
+    border-radius: var(--border-radius-1);
     margin-bottom: 1rem;
+    background: transparent;
+    border: 1px solid var(--color-dark);
+    transition: all 300ms ease;
+}
+
+.login-form form >input:hover {
+    border: 1px solid var(--color-success);
 }
     
-form button[type="submit"] {
-    background-color: var(--color-light);
-    color: var(--color-white);
+.login-form form button[type="submit"] {
+    background-color: var(--color-primary);
+    color: black;
     border: none;
     padding: 0.5em;
     border-radius: var(--border-radius-1);
     cursor: pointer;
 }
     
-form button[type="submit"]:hover {
-    background-color: #2980b9;
+.login-form form button[type="submit"]:hover {
+    background-color: var(--color-success);
 }
